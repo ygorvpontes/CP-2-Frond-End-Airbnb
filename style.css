@@ -71,3 +71,38 @@ text-decoration: underline;
 .images picture:hover{
     scale: 1.1;
 }
+
+.barra-nav{
+ display: flex;
+ border: solid 1px rgb(139, 137, 137);
+ 
+
+
+}
+.container-right{
+    display: flex;
+}
+.img-logo{
+    max-width: 150px;
+    margin-right:250px;;
+    
+}
+.search-bar{
+    display: flex;
+    margin: 45px;
+    border: solid 1px;
+    border-radius: 50px;
+    
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+.user-button{
+    max-width: 100px;
+}
