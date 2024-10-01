@@ -25,6 +25,7 @@
    h1 {
        font-size: 26;
        margin-bottom: 4px;
+    
    }
    .information{
        display: flex;
@@ -101,7 +102,6 @@
     padding: 6px 16px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    margin-right: ;
 
 }
 .search-bar span{
@@ -199,3 +199,48 @@
     width: 16px; /* Ajuste conforme necessário */
     height: 16px; /* Ajuste conforme necessário */
   }
+
+.info-container{
+
+margin: 40px 290px; 
+
+}
+.title{
+    font-size: 25px;
+    /**/
+}
+.info-2{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    
+}
+.info-2 div{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 20px;
+    color:rgb(65, 64, 64);
+
+    
+}
+.info-2  div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.info-2  div:not(:first-child)::before{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: #222;
+    border-radius: 100%;
+    color:rgb(65, 64, 64);
+    
+}
+
+.avaliation-container{
+    display: flex;
+    
+}
