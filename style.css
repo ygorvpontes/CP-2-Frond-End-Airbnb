@@ -18,11 +18,29 @@ a, strong, span, h1 {
     color: #222;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+}
+
 .container {
     width: 100%;
     max-width: 1200px; 
     margin: 80px auto;
     padding: 0 20px;
+    
 }
 
 h1 {
@@ -93,7 +111,9 @@ h3{
     border-bottom: 1px solid #e0e0e0;
     background-color: #fff;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Ajusta o espaço entre itens da navbar */
 }
+
 
 /* Logo */
 .img-logo {
@@ -109,6 +129,7 @@ h3{
     border-radius: 50px;
     padding: 6px 16px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    gap: 12px; /* Ajusta o espaço entre os elementos da barra de pesquisa */
     transition: box-shadow 0.3s ease;
 }
 
@@ -153,6 +174,7 @@ h3{
 .container-right {
     display: flex;
     align-items: center;
+    gap: 16px; /* Espaçamento entre os botões do lado direito */
 }
 
 .anuncie-button button, .idioma-button button, .user-button button {
@@ -199,7 +221,7 @@ h3{
     display: flex;
     align-items: center;
     margin-left: 10px;
-    max-width: 40px;
+    max-width: 36px;
 }
 
 .user-button svg {
@@ -208,10 +230,11 @@ h3{
 }
 
 .info-container {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 80px auto;
-    padding: 0 20px;
+    
+    
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
     margin-top: -50px;
     
     
@@ -247,14 +270,722 @@ h3{
     display: inline-flex;
 }
 
-@media (max-width: 768px) { /* Correção aqui */
-    .images {
-        grid-template-columns: 1fr;
-    }
-    .info-container {
-        margin: 20px;
-    }
-    .information {
+@media (max-width: 768px) { 
+    .barra-nav {
         flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; /* Ajusta o espaçamento da navbar em dispositivos menores */
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%; /* Para que a barra de pesquisa ocupe toda a largura disponível */
+        margin-top: 10px;
+    }
+
+    .container-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px; /* Ajusta o espaçamento entre os botões no lado direito */
     }
 }
+
+
+
+/* Seção de Informações */
+.information-section {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.information-section h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.information-section p {
+    font-size: 16px;
+    color: #717171;
+}
+
+.review-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    padding: 20px;
+    
+}
+
+.review-section .favorite {
+    font-size: 19px;
+    color: #222;
+}
+
+.review-section .rating {
+    font-size: 14px;
+    color: #717171;
+}
+
+.host-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #ddd;
+}
+
+.host-avatar img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+}
+
+.host-details p {
+    font-size: 14px;
+    color: #717171;
+}
+
+.features {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
+}
+
+.feature-item1 {
+    display: inline;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top:30px;
+    padding-bottom:50px;
+
+}
+
+.feature-item2 {
+    display: inline;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top:30px;
+    padding-bottom:50px;
+
+}
+
+.feature-item-border {
+    display: inline;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top:30px;
+    padding-bottom:40px;
+    
+
+}
+
+.feature-item1 span {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.feature-item1 p {
+    font-size: 14px;
+    color: #717171;
+    margin:0 20px 30px;
+    margin-top:10px;
+}
+
+.feature-item2 span {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.feature-item2 p {
+    font-size: 14px;
+    color: #717171;
+    margin:0 20px 30px;
+    margin-top:10px;
+}
+
+.feature-item-border span {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.feature-item-border p {
+    font-size: 14px;
+    color: #717171;
+    margin:0 20px 30px;
+    margin-top:10px;
+}
+
+.description {
+    border-top: 1px solid #ddd ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding:40px;
+    padding-left: 0; 
+
+}
+
+.description h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.description p {
+    font-size: 14px;
+    color: #717171;
+}
+
+.description a {
+    font-size: 14px;
+    color: #ff385c;
+    text-decoration: underline;
+}
+
+/* Ajustes para a seção de reserva */
+.reservation-section {
+    background-color: #fff;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 380px;
+    position: sticky;
+    margin-top:-50px;
+    top: 120px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra */
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.date-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.check-in, .check-out {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-in label, .check-out label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #717171;
+    margin-bottom: 4px;
+}
+
+.check-in input, .check-out input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 160px;
+}
+
+.guests-selection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.guests-selection label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #717171;
+    margin-bottom: 4px;
+}
+
+.guests-selection select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.reserve-button {
+    background-color: #ff385c;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.not-charged {
+    font-size: 12px;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 16px;
+}
+
+.cost-breakdown {
+    font-size: 14px;
+    color: #222;
+}
+
+.cost-breakdown p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 12px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}
+
+/* Ajustes na estrutura geral */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adiciona um espaçamento maior entre a coluna de informações e a seção de reserva */
+}
+
+.info-container {
+    width: 60%;
+    padding-right: 20px;
+     /* Espaçamento para a direita para evitar que o conteúdo fique muito colado à borda */
+}
+
+/* Seção de Reserva */
+.reservation-section {
+    background-color: #fff;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 380px;
+    position: sticky;
+    top: 120px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra */
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding e bordas sejam incluídos nas dimensões */
+}
+
+/* Ajuste para os inputs de data */
+.date-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 10px; /* Evitar que os campos fiquem muito próximos um do outro */
+}
+
+.check-in, .check-out {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Permite que ambos os campos usem o espaço disponível */
+}
+
+.check-in input, .check-out input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Faz com que o campo use o máximo de largura disponível */
+    box-sizing: border-box; /* Garante que padding e bordas não afetem a largura */
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        padding: 0 20px; /* Garante que haja espaçamento nas laterais da tela em telas menores */
+    }
+
+    .info-container, .reservation-section {
+        width: 100%;
+    }
+
+    .reservation-section {
+        margin-top: 24px;
+    }
+}
+
+.sleep-section {
+
+    border-bottom: 1px solid #ddd;
+    padding-bottom:50px;
+
+}
+
+.room-details {
+    display: inline;
+    align-items: center;
+    
+}
+
+.room-image {
+    margin:15px;
+    width: 300px;
+    height:200;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    margin-left:15px;
+}
+
+.sleep-section h2 {
+    margin-left:15px;
+}
+
+
+
+.amenities-section {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd
+}
+
+.amenities-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    gap: 20px;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.amenity i {
+    font-size: 24px;
+    color: #555;
+}
+
+.amenity p {
+    font-size: 16px;
+    color: #777;
+}
+
+.show-all-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.show-all-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.calendar-container {
+    display: flex;
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .calendar-container img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    
+    
+  }
+  
+  .rating-section {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; /* Alinha verticalmente no centro */
+    margin: 40px 0; /* Espaçamento acima e abaixo da seção */
+    padding: 20px; /* Padding para um melhor espaçamento interno */
+}
+
+.rating-section img {
+    max-width: 100%; /* Faz a imagem ocupar no máximo a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    
+}
+
+.map-section p {
+    margin-top:20px;
+   
+}
+
+.map-container{
+    margin-top:20px;
+    margin-bottom:40px;
+    border-bottom:1px solid #ddd;
+    padding:20px;
+}
+/* Estilo para a seção de informações importantes */
+.important-info-section {
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-column {
+    flex: 1;
+}
+
+.info-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-column p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+
+.info-column a {
+    color: #FF5A5F;
+    text-decoration: none;
+}
+
+/* Estilo para a seção "Quem vai receber você" */
+.host-section {
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+}
+
+.host-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+.host-profile {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.host-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.host-details h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.host-details p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #717171;
+}
+
+.host-stats {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.host-info {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.host-info a {
+    color: #FF5A5F;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.host-extra {
+    flex: 2;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.host-extra h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cohost-section {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cohost-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.cohost-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.contact-host-btn {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+}
+
+.contact-host-btn:hover {
+    background-color: #444;
+}
+
+
+/* Estilo para a parte final do rodapé */
+.footer-final {
+    background-color: #f7f7f7; /* Altere aqui para a cor de fundo desejada */
+    padding: 2rem 0;
+    border-top: 1px solid #ddd; /* Adiciona uma borda superior */
+    position: relative; /* Para garantir que a borda se estenda corretamente */
+    left: 0; /* Para garantir que fique alinhado à esquerda */
+    right: 0; /* Para garantir que fique alinhado à direita */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px; /* Largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 1rem; /* Adiciona um pequeno padding para o conteúdo */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 1rem; /* Espaçamento entre as colunas */
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #717171; /* Cor dos links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #717171; /* Cor do texto no rodapé */
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.footer-bottom a {
+    color: #717171; /* Cor dos links na parte inferior */
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Efeito hover nos links na parte inferior */
+}
+
+.footer-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem; /* Margem entre os ícones sociais */
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
