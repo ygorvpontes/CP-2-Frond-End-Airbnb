@@ -66,6 +66,11 @@
 </header>
 
 
+
+
+
+
+
 <main>
 <div class="container ">
   <header>
@@ -117,12 +122,16 @@
   
 
 <div class="container">
+    <!-- Outros conteúdos da página -->
     <div class="main-content">
         <div class="info-container">
+            <!-- Detalhes à esquerda, como nome da propriedade, avaliação, etc. -->
+            <!-- Informações da Propriedade -->
   <div class="information-section">
     <h1>Microcasa em Córrego do Bom Jesus, Brasil</h1>
     <p>2 hóspedes · 1 quarto · 1 cama · 1 banheiro</p>
     
+    <!-- Avaliação e Preferências -->
     <div class="review-section">
         <div class="favorite">
             <strong>❤️ Preferido dos hóspedes</strong>
@@ -133,6 +142,7 @@
         </div>
     </div>
 
+    <!-- Anfitrião -->
     <div class="host-info">
         <div class="host-avatar">
             <img src="./img/host-img.webp" alt="Anfitrião Murilo">
@@ -143,6 +153,7 @@
         </div>
     </div>
 
+    <!-- Características -->
     <div class="features">
         <div class="feature-item1">
           <span>🧑‍💻 Espaço de trabalho exclusivo</span>
@@ -154,28 +165,220 @@
         </div>
         <div class="feature-item-border">
             <span>⭐ Murilo é um Superhost</span>
-            <p>Superhosts são anfitriões experientes e avaliados como excelentes que se comprometem a proporcionar estadias ótimas para os hóspedes.</p>
+            <p>Superhosts são anfitriões experientes, com ótimas avaliações.</p>
         </div>
     </div>
 
+    <!-- Descrição -->
+    <div class="description">
+        <h3>Experiência única</h3>
+        <p>Experiência única em uma casa com arquitetura moderna e vista para as montanhas da Serra da Mantiqueira. Inserida em uma área privativa de 20 mil m² repleta de belezas naturais...</p>
+        <a href="#">Mostrar mais</a>
+    </div>
 </div>
         </div>
+        <div class="reservation-section">
+            <div class="price-info">
+                <span class="price">R$690</span> <span>/ noite</span>
+            </div>
+            <div class="date-picker">
+                <div class="check-in">
+                    <label for="check-in">CHECK-IN</label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="check-out">
+                    <label for="check-out">CHECK-OUT</label>
+                    <input type="date" id="check-out">
+                </div>
+            </div>
+            <div class="guests-selection">
+                <label for="guests">HÓSPEDES</label>
+                <select id="guests">
+                    <option value="1">1 hóspede</option>
+                    <option value="2">2 hóspedes</option>
+                    <!-- Outros valores -->
+                </select>
+            </div>
+            <button class="reserve-button">Reservar</button>
+            <p class="not-charged">Você ainda não será cobrado</p>
+            <div class="cost-breakdown">
+                <p>R$690 x 5 noites <span>R$3.450</span></p>
+                <p>Taxa de limpeza <span>R$150</span></p>
+                <p>Taxa de serviço do Airbnb <span>R$523</span></p>
+                <p class="total">Total sem impostos <span>R$4.123</span></p>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <section class="about-container">
-            <h2>Sobre esta acomodação</h2>
-            <p>Já pensou em ficar hospedado em um Templo Zen? Sim, o Templo existe e você pode passar uma estadia maravilhosa. Lugar de paz, beleza natural e uma energia incomparável. Os detalhes da nossa Micro Casa foram pensados cuidadosamente para proporcionar uma experiência única. Venha se conectar com a natureza e com você mesmo.</p>
-            <p>Estamos localizados no Sul de Minas, cidade de Córrego do Bom Jesus, próximo de São Paulo.</p>
-        </section>
+    <section id="where-you-sleep" class="sleep-section">
+      <h2>Onde você vai dormir</h2>
+      <div class="room-details">
+          <img src="./img/quarto.webp" alt="Quarto" class="room-image">
+          <div class="room-info">
+              <h3>Quarto</h3>
+              <p>1 cama queen</p>
+          </div>
+      </div>
+  </section>
+  
+  <section id="amenities" class="amenities-section">
+    <h2>O que esse lugar oferece</h2>
+    <div class="amenities-grid">
+        <div class="amenity">
+            <i class="fa-solid fa-mountain-sun"></i>
+            <p>Vista para as montanhas</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-kitchen-set"></i>
+            <p>Cozinha</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-laptop"></i>
+            <p>Espaço de trabalho exclusivo</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-hot-tub"></i>
+            <p>Jacuzzi privativa</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-car"></i>
+            <p>Estacionamento incluído</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-wifi"></i>
+            <p>Wi-Fi</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-camera"></i>
+            <p>Câmeras de segurança</p>
+        </div>
+        <div class="amenity">
+            <i class="fa-solid fa-fire-extinguisher"></i>
+            <p>Detector de fumaça</p>
+        </div>
     </div>
+    <button class="show-all-btn">Mostrar todas as 49 comodidades</button>
+</section>
 
+<div class="calendar-container">
+  <!-- Substituir o calendário funcional pela imagem -->
+  <img src="./img/calendario.png" alt="Calendário" class="w-full h-auto" />
+</div>
+
+
+
+
+<section id="rating" class="rating-section">
+  <img src="./img/avaliation.png" alt="Avaliações">
+</section>
+
+<section id="map" class="map-section">
+  <h2>Onde você estará</h2>
+  <p>Córrego do Bom Jesus, Minas Gerais, Brasil</p>
+  <div class="map-container">
+      <img src="./img/mapa.png" alt="Mapa da Localização" class="map-image">
+      <!-- Você pode usar uma iframe do Google Maps aqui, se preferir -->
+ 
   </div>
+</section>
+
+<!-- Seção "Quem vai receber você" -->
+<section class="host-section">
+  <h2>Quem vai receber você</h2>
+  <div class="host-container">
+      <div class="host-profile">
+          <img src="./img/murilo.webp" alt="Murilo">
+          <div class="host-details">
+              <h3>Murilo</h3>
+              <p>Superhost</p>
+              <div class="host-stats">
+                  <p>87 avaliações</p>
+                  <p>NaN★ estrelas</p>
+                  <p>2 anos hospedando</p>
+              </div>
+              <div class="host-info">
+                  <p><i class="fa-solid fa-briefcase"></i> Meu trabalho: BBDO Worldwide</p>
+                  <p><i class="fa-solid fa-globe"></i> Idiomas: inglês, português e espanhol</p>
+                  <p>Sou publicitário e apaixonado por viajar.</p>
+                  <a href="#">Mostrar mais</a>
+              </div>
+          </div>
+      </div>
+      <div class="host-extra">
+          <h3>Murilo é Superhost</h3>
+          <p>Superhosts são anfitriões experientes, com ótimas avaliações e que se empenham em oferecer estadias incríveis para os hóspedes.</p>
+          <h4>Coanfitriões</h4>
+          <p>Bruna</p>
+          <img src="./img/bruna.webp" alt="Bruna" class="cohost-photo">
+          <h4>Informações do anfitrião</h4>
+          <p>Taxa de resposta: 100%</p>
+          <p>Responde em até 1 hora</p>
+          <button class="contact-host-btn">Envie uma mensagem para o anfitrião</button>
+      </div>
+  </div>
+</section>
+
+<!-- Seção "O que você deve saber" -->
+<section class="important-info-section">
+  <h2>O que você deve saber</h2>
+  <div class="info-columns">
+      <div class="info-column">
+          <h3>Regras da casa</h3>
+          <p>Check-in após 15:00</p>
+          <p>Checkout antes das 11:00</p>
+          <p>Máximo de 2 hóspedes</p>
+          <p>Proibido fumar</p>
+          <p>Sem festas ou eventos</p>
+      </div>
+      <div class="info-column">
+          <h3>Saúde e segurança</h3>
+          <p>Câmeras de segurança na propriedade</p>
+          <p>Detector de fumaça ausente</p>
+          <p>Sem alarme de monóxido de carbono</p>
+          <p>Protocolo COVID-19: siga as orientações locais</p>
+      </div>
+      <div class="info-column">
+          <h3>Política de cancelamento</h3>
+          <p>Cancelamento gratuito dentro de 48 horas</p>
+          <p>Depois disso, 50% de reembolso até 7 dias antes do check-in</p>
+          <a href="#">Mostrar mais detalhes</a>
+      </div>
+  </div>
+</section>
 
 
+
+
+<div class="footer-final">
+  <div class="footer-top">
+      <div class="footer-links">
+          <ul>
+              <li><a href="#">Atendimento</a></li>
+              <li><a href="#">Central de Ajuda</a></li>
+              <li><a href="#">AirCover</a></li>
+              <li><a href="#">Antidiscriminação</a></li>
+          </ul>
+          <ul>
+              <li><a href="#">Apoio à pessoa com deficiência</a></li>
+              <li><a href="#">Opções de cancelamento</a></li>
+              <li><a href="#">Reporte um problema no bairro</a></li>
+          </ul>
+          <ul>
+              <li><a href="#">Hospedagem</a></li>
+              <li><a href="#">Anuncie seu espaço no Airbnb</a></li>
+              <li><a href="#">AirCover para anfitriões</a></li>
+              <li><a href="#">Recursos para anfitriões</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      © 2024 Airbnb, Inc. · Privacidade · Termos · Mapa do site · Informações da empresa
+  </div>
+</div>
+
+
+
+ 
 </main>
-
-
-
 </body>
 </html>
